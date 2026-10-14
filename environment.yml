@@ -1,0 +1,10 @@
+name: utrecht-map
+channels:
+  - conda-forge        # community channel; has well-built geo packages
+dependencies:
+  - python=3.12
+  - geopandas          # pandas + geometry columns
+  - pyogrio            # fast reader/writer for GeoPackage etc. (uses GDAL)
+  - matplotlib         # for quick .plot() checks
+  - requests           # downloading tiles
+  - ipykernel          # lets VS Code / Jupyter notebooks use this env
